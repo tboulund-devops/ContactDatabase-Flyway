@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Deliver database"){
             steps{
-                sh "docker-compose up "
+                sh "docker-compose up -d"
             }
         }
     }
