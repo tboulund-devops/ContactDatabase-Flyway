@@ -1,0 +1,4 @@
+CREATE TABLE Cities(
+    Zipcode VARCHAR(10) NOT NULL PRIMARY KEY,
+    `Name` VARCHAR(100) NOT NULL
+)

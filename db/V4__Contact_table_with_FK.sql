@@ -1,0 +1,7 @@
+ALTER TABLE Contacts ADD CountryCode VARCHAR(2) NOT NULL;
+
+ALTER TABLE Contacts DROP COLUMN City;
+ALTER TABLE Contacts DROP COLUMN Country;
+
+ALTER TABLE Contacts ADD FOREIGN KEY (Zipcode) REFERENCES Cities(Zipcode);
+ALTER TABLE Contacts ADD FOREIGN KEY (CountryCode) REFERENCES Countries(Code);
