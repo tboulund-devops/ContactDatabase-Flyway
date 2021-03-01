@@ -9,6 +9,8 @@ services:
     environment: 
       MYSQL_ROOT_PASSWORD: MY_S€cr€T_P@ssw0rD
       MYSQL_DATABASE: ContactBook
+    ports:
+      - 63306:3306
 
   phpmyadmin:
     image: phpmyadmin
