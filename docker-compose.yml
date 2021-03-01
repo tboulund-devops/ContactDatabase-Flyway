@@ -11,16 +11,6 @@ services:
       MYSQL_DATABASE: ContactBook
     ports:
       - 63306:3306
-
-  phpmyadmin:
-    image: phpmyadmin
-    restart: always
-    ports:
-      - 9999:80
-    environment: 
-      PMA_HOST: app-database
-    depends_on: 
-      - app-database
   
   flyway:
     image: flyway/flyway
