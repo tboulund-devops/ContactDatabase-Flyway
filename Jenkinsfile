@@ -1,8 +1,8 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage("Deliver database"){
-            steps{
+    stages {
+        stage("Deliver database") {
+            steps {
                 sh "docker-compose up -d"
             }
         }

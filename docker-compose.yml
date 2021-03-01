@@ -1,6 +1,6 @@
 version: "3.3"
 
-services: 
+services:
   app-database:
     image: mysql
     restart: always
@@ -11,7 +11,7 @@ services:
       MYSQL_DATABASE: ContactBook
     ports:
       - 63306:3306
-  
+
   flyway:
     image: flyway/flyway
     command: migrate
